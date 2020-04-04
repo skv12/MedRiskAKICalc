@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Прогнозирование ОПП у пациентов с ИБС и МС готовящихся на реваскуляризацию миокарда шунтирующими методами."
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="4dp"
+                android:text="\n
+    Yопп% = 0,7*Хвозр + 2,3*Химт + 14*Хкур – 16*Хстат + 0,1*Хфв – 18,5*Хкдрлж + 0,4*Хскф + 0,6*Хкреат + 13*Хпрот + 3*ХHbA1c + 2,7*Хглю + 0,9*Хнв – 2,4*Хгемат – 2,5*Хосх – 2*Хтг – 24*Хлпвп + 12,2*Хлпнп – 105 \n
+    где, \n
+        Хвозр- возраст (годы), \n
+        X ИМТ – индекс массы тела (кг/м 2 ), \n
+        X КУР – наличие курения (0 – некурящие, 1 - курящие), \n
+        Хстат- прием статинов лечебной дозе (0 – не получает, 1 - получает), \n
+        Хфвлж – фракция выброса левого желудочка (%), \n
+        Хкдрлж – конечно-диастолический размер левого желудочка (см), \n
+        Хскф – скорость клубочковой фильтрации – CKD- EPI (мл/мин/1,73м 2 ), \n
+        Хкреат – сывороточный креатинин (мкмоль/л), \n
+        Хпрот – протеинурия ( мг), \n
+        ХHbA1c – гликированный гемоглобин (%), \n
+        Хглю – уровень глюкозы крови ( ммоль/л), \n
+        Хнв – уровень гемоглобина крови (г/л), \n
+        Хгемат – гематокрит крови (%), \n
+        Хохс – общий холестерин (ммоль/л), \n
+        Хтг – триглицериды (ммоль/л), \n
+        Хлпвп – липопротеиды высокой плотности (ммоль/л), \n
+        Хлпнп – липопротеиды низкой плотности (ммоль/л), \n
+        Где Yопп% - вероятность возникновения ОПП в процентах, \n
+        - 105 – константа (базовая вероятность ОПП при отсутствии факторов, включенных в модель), 0,7, 2,3, 14, 16 и т.д. – коэффициенты регрессии, определяющие на сколько увеличится риск ОПП при наличии соответствующего ему фактора риска, \n
+        Xкур – наличие курения (0 – некурящие, 1 - курящие), \n
+        Хстат- прием статинов лечебной дозе (0 – не получает, 1 - получает)"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/Title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+

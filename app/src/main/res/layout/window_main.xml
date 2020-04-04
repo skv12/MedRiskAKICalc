@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">   
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/AgeLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Age_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12pt"
+                android:hint="@string/age"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/age_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/BMILayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/AgeLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/BMI_text"
+                android:layout_height="wrap_content"
+                android:textSize="12pt"
+                android:hint="@string/BMI"
+                android:inputType="numberDecimal"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/BMI_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/Atorvastatin_checkbox"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="24dp"
+            android:textSize="12pt"
+            android:text="@string/Atorvastatin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/BMILayout" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/LVEDPLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Atorvastatin_checkbox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/LVEDPText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12pt"
+                android:inputType="numberDecimal"
+                android:hint="@string/LVEDP" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/LVEDP_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/EFLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LVEDPLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EF_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12pt"
+                android:hint="@string/EF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/EF_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/Smoking_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="24dp"
+            android:textSize="12pt"
+            android:text="@string/smoking"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EFLayout" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/GFRLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Smoking_checkbox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/GFR_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12pt"
+                android:inputType="numberDecimal"
+                android:hint="@string/GFR" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/GFR_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CreatininLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/GFRLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Creatinin_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12pt"
+                android:inputType="numberDecimal"
+                android:hint="@string/Creatinin" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/Creatinin_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ProteinuriaLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/CreatininLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Proteinuria_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12pt"
+                android:hint="@string/Proteinuria" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/Proteinuria_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/НbА1сLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ProteinuriaLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/HbА1с_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12pt"
+                android:hint="@string/НbА1с" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/НbА1с_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PlasmaGlucoseLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/НbА1сLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PlasmaGlucose_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12pt"
+                android:hint="@string/PlasmaGlucose" />
+
+            <TextView
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/PlasmaGlucose_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/HbLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/PlasmaGlucoseLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Hb_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12pt"
+                android:hint="@string/Hb" />
+
+            <TextView
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/Hb_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/HtLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/HbLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Ht_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12pt"
+                android:hint="@string/Ht" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/Ht_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/CholesterolLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/HtLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Cholesterol_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12pt"
+                android:hint="@string/Сholesterol" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/Сholesterol_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/TriglyceridesLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/CholesterolLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Triglycerides_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12pt"
+                android:hint="@string/Triglycerides" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/Triglycerides_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/HDLcholesterolLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TriglyceridesLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/HDLcholesterol_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12pt"
+                android:hint="@string/HDLcholesterol" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/HDLcholesterol_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/LDLcholesterolLayout"
+            android:layout_width="250dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/HDLcholesterolLayout">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/LDLcholesterol_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="12pt"
+                android:hint="@string/LDLcholesterol" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/LDLcholesterol_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/resultButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="@string/result_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LDLcholesterolLayout"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="80dp"
+            android:textSize="12pt"
+            android:text="Результат:"
+            app:layout_constraintBottom_toTopOf="@id/resultButton"
+            app:layout_constraintStart_toEndOf="@+id/LDLcholesterolLayout" />
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="12pt"
+            android:text=""
+            app:layout_constraintBottom_toTopOf="@id/resultButton"
+            app:layout_constraintStart_toEndOf="@+id/LDLcholesterolLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

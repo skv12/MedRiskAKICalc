@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Калькулятор прогнозирования ОПП</string>
+    <string name="title_input">Ввод данных</string>
+    <string name="title_about">О входных данных</string>
+    <string name="title_history">История измерений</string>
+
+    <string name="age">Возраст</string>
+    <string name="BMI">ИМТ</string>
+    <string name="Atorvastatin">Статины (80 мг)</string>
+    <string name="LVEDP">КДР ЛЖ</string>
+    <string name="EF">ФВ</string>
+    <string name="smoking">Курящий</string>
+    <string name="GFR">СКФ</string>
+    <string name="Creatinin">Креатинин</string>
+    <string name="Proteinuria">Протеинурия</string>
+    <string name="НbА1с">НвА1с</string>
+    <string name="PlasmaGlucose">Сахар крови</string>
+    <string name="Hb">Гемоглобин</string>
+    <string name="Ht">Нт</string>
+    <string name="Сholesterol">ОХС</string>
+    <string name="Triglycerides">ТГ</string>
+    <string name="HDLcholesterol">ЛПВП</string>
+    <string name="LDLcholesterol">ЛПНП</string>
+
+    <string name="age_hint">годы</string>
+    <string name="BMI_hint">кг/м²</string>
+    <string name="LVEDP_hint">см</string>
+    <string name="EF_hint">%</string>
+    <string name="GFR_hint">мл/мин/1,73м²</string>
+    <string name="Creatinin_hint">мкмоль/л</string>
+    <string name="Proteinuria_hint">мг</string>
+    <string name="НbА1с_hint">%</string>
+    <string name="PlasmaGlucose_hint">ммоль/л</string>
+    <string name="Hb_hint">г/л</string>
+    <string name="Ht_hint">%</string>
+    <string name="Сholesterol_hint">ммоль/л</string>
+    <string name="Triglycerides_hint">ммоль/л</string>
+    <string name="HDLcholesterol_hint">ммоль/л</string>
+    <string name="LDLcholesterol_hint">ммоль/л</string>
+    <string name="result_button">Подсчитать</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_main">
+
+    <fragment
+        android:id="@+id/navigation_main"
+        android:name="com.example.diploma.ui.main.MainFragment"
+        android:label="@string/title_input"
+        tools:layout="@layout/window_main" />
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.example.diploma.ui.about.AboutFragment"
+        android:label="@string/title_about"
+        tools:layout="@layout/window_about" />
+
+    <fragment
+        android:id="@+id/navigation_resultHistory"
+        android:name="com.example.diploma.ui.resulthistory.ResultHistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/window_resulthistory" />
+</navigation>
